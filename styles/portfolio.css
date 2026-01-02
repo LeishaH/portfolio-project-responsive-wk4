@@ -9,7 +9,6 @@
 :root {
   --nc-navy: #103c55;
   --nc-gold: #b7a02d;
-  --nc-cream: #f9f9f9;
 
   --nc-text: #0f2230;
   --nc-muted: rgba(15, 34, 48, 0.72);
@@ -43,7 +42,6 @@ h3 {
   letter-spacing: -0.02em;
 }
 
-/* Don’t force ALL paragraphs muted — let Bootstrap utilities control it */
 p {
   margin-bottom: 1rem;
 }
@@ -59,32 +57,34 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 6) Header (matches: <header class="py-4 border-bottom">...) */
+/* 6) Header */
 header {
   background: #fff;
-  border-bottom-color: rgba(16, 60, 85, 0.12) !important;
+  border-bottom-color: rgba(16, 60, 85, 0.12);
 }
 
-header img {
-  height: 64px; /* large but not huge */
+/* Logo — same size you liked */
+.logo-img {
+  height: 140px;
   width: auto;
   display: block;
 }
 
-/* The "Nota Clara" header text is: <span class="fs-4 fw-semibold"> */
+/* Header text: keep Bootstrap fs-4, just style font + alignment */
 header span {
   font-family: var(--nc-heading-font);
   color: var(--nc-navy);
   letter-spacing: 0.01em;
+  margin-top: 0.2rem; /* subtle optical alignment */
 }
 
-/* 7) Hero (matches your new <section class="hero py-5">...) */
+/* 7) Hero */
 .hero {
   background: #fff;
 }
 
 .hero-card {
-  max-width: 760px; /* stops it taking the whole screen */
+  max-width: 760px;
   background: linear-gradient(
     180deg,
     rgba(183, 160, 45, 0.08),
@@ -96,7 +96,7 @@ header span {
   padding: 2rem;
 }
 
-/* Custom button style (you’re already using: class="btn btn-nc") */
+/* Button */
 .btn-nc {
   background: var(--nc-navy);
   border: 1px solid var(--nc-navy);
@@ -110,22 +110,22 @@ header span {
   background: #0c2e42;
   border-color: #0c2e42;
   color: #fff;
+  text-decoration: none;
 }
 
-/* 8) Main spacing (you currently have <main class="container py-5">...) */
-/* This is optional — Bootstrap already handles spacing, so keep it minimal */
+/* 8) Main spacing */
 main {
-  padding-top: 0; /* because hero already adds spacing */
+  padding-top: 0;
 }
 
-/* 9) Responsive adjustments */
+/* 9) Responsive tweaks */
 @media (max-width: 576px) {
-  header img {
-    height: 52px;
+  .logo-img {
+    height: 64px;
   }
 
   header span {
-    font-size: 1.15rem !important;
+    margin-top: 0.1rem;
   }
 
   .hero-card {
