@@ -43,8 +43,9 @@ h3 {
   letter-spacing: -0.02em;
 }
 
+/* Don’t force ALL paragraphs muted — let Bootstrap utilities control it */
 p {
-  color: var(--nc-muted);
+  margin-bottom: 1rem;
 }
 
 /* 5) Links */
@@ -58,39 +59,76 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 6) Header (matches your current HTML: <header class="py-4 border-bottom">...) */
+/* 6) Header (matches: <header class="py-4 border-bottom">...) */
 header {
   background: #fff;
   border-bottom-color: rgba(16, 60, 85, 0.12) !important;
 }
 
-/* Logo: larger but controlled */
 header img {
-  height: 72px; /* adjust: 64–84 is a nice range */
+  height: 64px; /* large but not huge */
   width: auto;
   display: block;
 }
 
-/* The "Nota Clara" text in the header is a <span class="fs-4 fw-semibold"> */
+/* The "Nota Clara" header text is: <span class="fs-4 fw-semibold"> */
 header span {
   font-family: var(--nc-heading-font);
   color: var(--nc-navy);
   letter-spacing: 0.01em;
 }
 
-/* 7) Main spacing tweaks (still letting Bootstrap do most work) */
-main {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+/* 7) Hero (matches your new <section class="hero py-5">...) */
+.hero {
+  background: #fff;
 }
 
-/* 8) Responsive adjustments */
+.hero-card {
+  max-width: 760px; /* stops it taking the whole screen */
+  background: linear-gradient(
+    180deg,
+    rgba(183, 160, 45, 0.08),
+    rgba(16, 60, 85, 0.04)
+  );
+  border: 1px solid rgba(16, 60, 85, 0.12);
+  border-radius: var(--nc-radius);
+  box-shadow: var(--nc-shadow);
+  padding: 2rem;
+}
+
+/* Custom button style (you’re already using: class="btn btn-nc") */
+.btn-nc {
+  background: var(--nc-navy);
+  border: 1px solid var(--nc-navy);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.7rem 1.1rem;
+  font-weight: 600;
+}
+
+.btn-nc:hover {
+  background: #0c2e42;
+  border-color: #0c2e42;
+  color: #fff;
+}
+
+/* 8) Main spacing (you currently have <main class="container py-5">...) */
+/* This is optional — Bootstrap already handles spacing, so keep it minimal */
+main {
+  padding-top: 0; /* because hero already adds spacing */
+}
+
+/* 9) Responsive adjustments */
 @media (max-width: 576px) {
   header img {
-    height: 56px;
+    height: 52px;
   }
 
   header span {
-    font-size: 1.15rem !important; /* gently reduce on small screens */
+    font-size: 1.15rem !important;
+  }
+
+  .hero-card {
+    padding: 1.4rem;
   }
 }
