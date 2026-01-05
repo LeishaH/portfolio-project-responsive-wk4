@@ -96,6 +96,11 @@ header span {
   padding: 2rem;
 }
 
+/* Layout helpers */
+section {
+  scroll-margin-top: 120px;
+}
+
 /* Button */
 .btn-nc {
   background: var(--nc-navy);
