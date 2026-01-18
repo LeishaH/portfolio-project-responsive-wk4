@@ -249,6 +249,20 @@ main {
   section img.rounded {
     border-radius: 12px;
   }
+
+  /* Home page: align stacked sections more calmly on mobile */
+  main > .row {
+    justify-content: center;
+  }
+
+  main > .row > [class*="col-"] {
+    max-width: 92%;
+  }
+
+  /* Home page topics: soften image-first spacing a touch */
+  #topics img {
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* Optional: hide brand text on tiny screens (uncomment if desired) */
