@@ -91,6 +91,13 @@ header span {
 
 /* --- Navbar styling --- */
 
+/* Ensure navbar lists never show bullets (fixes mobile bullets) */
+.navbar-nav {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
 /* Nav links: keep Nota Clara palette + stop global underline */
 .navbar .nav-link {
   color: var(--nc-text);
@@ -226,6 +233,12 @@ main {
   .navbar-nav .nav-link {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  /* Navbar CTA: keep it separated from links (fixes overlap) */
+  .navbar-nav .btn {
+    display: inline-block;
+    margin-top: 0.75rem;
   }
 
   /* Hero spacing */
