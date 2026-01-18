@@ -179,15 +179,77 @@ main {
 
 /* 9) Responsive tweaks */
 @media (max-width: 576px) {
+  /* Make the header/nav feel calmer on phones */
+  header {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  /* Smaller logo on phones */
   .logo-img {
-    height: 64px;
+    height: 44px; /* reduced from 64px */
   }
 
   header span {
     margin-top: 0.1rem;
   }
 
+  /* Reduce brand text size on mobile so it doesn't crowd the toggler */
+  .navbar-brand span {
+    font-size: 1.1rem; /* overrides Bootstrap fs-4 on mobile */
+    line-height: 1.1;
+  }
+
+  /* Leave room for the hamburger */
+  .navbar-brand {
+    max-width: calc(100% - 64px);
+  }
+
+  /* Prevent awkward wrapping */
+  .navbar-brand span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Give the collapsed menu a bit of breathing room */
+  .navbar-collapse {
+    padding-top: 0.75rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* Hero spacing */
   .hero-card {
     padding: 1.4rem;
   }
+
+  /* Reduce visual weight of section images on mobile */
+  section img {
+    max-width: 88%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Add breathing room between image + text when stacked */
+  section .row {
+    row-gap: 1.5rem;
+  }
+
+  /* Slightly smaller rounding feels nicer on mobile */
+  section img.rounded {
+    border-radius: 12px;
+  }
 }
+
+/* Optional: hide brand text on tiny screens (uncomment if desired) */
+/*
+@media (max-width: 380px) {
+  .navbar-brand span {
+    display: none;
+  }
+}
+*/
