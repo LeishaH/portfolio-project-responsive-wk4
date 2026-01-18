@@ -23,15 +23,56 @@
   </head>
 
   <body>
-    <header class="py-4 border-bottom">
-      <div class="container d-flex align-items-center gap-1">
-        <img
-          class="logo-img"
-          src="images/nota-clara-logo.png"
-          alt="Nota Clara classical music education logo"
-        />
-        <span class="fs-4 fw-semibold">Nota Clara</span>
-      </div>
+    <!-- =======================
+      Header / Navbar
+    ======================= -->
+    <header class="py-3 border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- Brand -->
+          <a
+            class="navbar-brand d-flex align-items-center gap-2 m-0"
+            href="index.html"
+          >
+            <img
+              class="logo-img"
+              src="images/nota-clara-logo.png"
+              alt="Nota Clara classical music education logo"
+            />
+            <span class="fs-4 fw-semibold">Nota Clara</span>
+          </a>
+
+          <!-- Mobile toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#ncNavbar"
+            aria-controls="ncNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Nav links -->
+          <div class="collapse navbar-collapse" id="ncNavbar">
+            <ul
+              class="navbar-nav ms-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#topics">Topics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item mt-2 mt-lg-0">
+                <a class="btn btn-nc ms-lg-2" href="#topics">Explore</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- =======================
@@ -44,7 +85,7 @@
           <p class="text-muted mb-4">
             A calm, modern approach to understanding music theory and listening.
           </p>
-          <a href="#" class="btn btn-nc">Explore the concept</a>
+          <a href="#topics" class="btn btn-nc">Explore the concept</a>
         </div>
       </div>
     </section>

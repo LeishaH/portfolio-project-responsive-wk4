@@ -63,19 +63,73 @@ header {
   border-bottom-color: rgba(16, 60, 85, 0.12);
 }
 
-/* Logo — same size you liked */
+/* Reduce default navbar vertical padding so tall logo doesn't feel "broken" */
+header .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Brand container: keep clean alignment even with a larger logo */
+.navbar-brand {
+  text-decoration: none;
+}
+
+/* Logo */
 .logo-img {
-  height: 140px;
+  height: 120px; /* was 140px — still big, but won't wreck navbar layout */
   width: auto;
   display: block;
 }
 
-/* Header text: keep Bootstrap fs-4, just style font + alignment */
+/* Header text */
 header span {
   font-family: var(--nc-heading-font);
   color: var(--nc-navy);
   letter-spacing: 0.01em;
   margin-top: 0.2rem; /* subtle optical alignment */
+}
+
+/* --- Navbar styling --- */
+
+/* Nav links: keep Nota Clara palette + stop global underline */
+.navbar .nav-link {
+  color: var(--nc-text);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Hover/focus states (no underline) */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--nc-gold);
+  text-decoration: none;
+}
+
+/* Active link (if you add it later) */
+.navbar .nav-link.active {
+  color: var(--nc-navy);
+  font-weight: 600;
+}
+
+/* Mobile toggler: visible + tidy */
+.navbar-toggler {
+  border: 1px solid rgba(16, 60, 85, 0.25);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Ensure icon has size even if navbar theme classes aren't used */
+.navbar-toggler-icon {
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(16,60,85,0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Optional: keep the collapsed menu feeling clean */
+.navbar-collapse {
+  padding-bottom: 0.25rem;
 }
 
 /* 7) Hero */
