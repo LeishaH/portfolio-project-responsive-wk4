@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Nota Clara</title>
+    <title>Contact · Nota Clara</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
     <!-- Bootstrap CSS -->
@@ -24,9 +24,66 @@
 
   <body>
     <!-- =======================
-         Contact hero section
-         ======================= -->
-    <section class="about-hero py-5 border-bottom bg-body-tertiary">
+      Header / Navbar
+    ======================= -->
+    <header class="py-3 border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2 m-0"
+            href="index.html"
+          >
+            <img
+              class="logo-img"
+              src="images/nota-clara-logo.png"
+              alt="Nota Clara classical music education logo"
+            />
+            <span class="fs-4 fw-semibold">Nota Clara</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#ncNavbar"
+            aria-controls="ncNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="ncNavbar">
+            <ul
+              class="navbar-nav ms-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#topics">Topics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="work.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item mt-2 mt-lg-0">
+                <a class="btn btn-nc ms-lg-2" href="index.html#topics"
+                  >Explore</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =======================
+      Contact hero section
+    ======================= -->
+    <section class="page-hero py-5 border-bottom bg-body-tertiary">
       <div class="container text-center">
         <h1 class="mb-2">Contact</h1>
         <p class="text-muted mb-0">Get in touch or follow the project</p>
@@ -34,53 +91,59 @@
     </section>
 
     <main class="container py-5">
-      <!-- Intro -->
-      <section class="mb-5">
-        <h2 class="mt-0">Get in touch</h2>
-        <p class="text-muted">
-          Nota Clara is a fictional project created for learning and
-          exploration. If this were a live platform, you could reach out or
-          follow along using the channels below.
-        </p>
-      </section>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Intro -->
+          <section class="mb-5">
+            <h2 class="mt-0">Get in touch</h2>
+            <p class="text-muted">
+              Nota Clara is a fictional project created for learning and
+              exploration. If this were a live platform, you could reach out or
+              follow along using the channels below.
+            </p>
+          </section>
 
-      <!-- Contact details -->
-      <section class="mb-5">
-        <h3>Email</h3>
-        <p class="text-muted mb-0">
-          <a href="mailto:hello@notaclara.example"> hello@notaclara.example </a>
-        </p>
-      </section>
+          <!-- Contact details -->
+          <section class="mb-5">
+            <h3>Email</h3>
+            <p class="text-muted mb-0">
+              <a href="mailto:hello@notaclara.example">
+                hello@notaclara.example
+              </a>
+            </p>
+          </section>
 
-      <!-- Social links -->
-      <section class="mb-5">
-        <h3>Follow</h3>
-        <ul class="list-unstyled text-muted mb-0">
-          <li>
-            <a
-              href="https://www.instagram.com/notaclara"
-              target="_blank"
-              rel="noopener"
-            >
-              Instagram — @notaclara
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/@notaclara"
-              target="_blank"
-              rel="noopener"
-            >
-              YouTube — Nota Clara
-            </a>
-          </li>
-        </ul>
-      </section>
+          <!-- Social links -->
+          <section class="mb-5">
+            <h3>Follow</h3>
+            <ul class="list-unstyled text-muted mb-0">
+              <li>
+                <a
+                  href="https://www.instagram.com/notaclara"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Instagram — @notaclara
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@notaclara"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  YouTube — Nota Clara
+                </a>
+              </li>
+            </ul>
+          </section>
 
-      <!-- CTA -->
-      <section class="text-center">
-        <a href="index.html" class="btn btn-nc">Back home</a>
-      </section>
+          <!-- CTA -->
+          <section class="text-center">
+            <a href="index.html" class="btn btn-nc">Back home</a>
+          </section>
+        </div>
+      </div>
     </main>
 
     <!-- Bootstrap JS -->

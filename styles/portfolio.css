@@ -155,6 +155,12 @@ section {
   scroll-margin-top: 120px;
 }
 
+/* Work page: keep project card images consistent */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
 /* Button */
 .btn-nc {
   background: var(--nc-navy);
