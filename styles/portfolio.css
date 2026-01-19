@@ -124,6 +124,24 @@ header span {
   font-weight: 600;
 }
 
+/* --- Footer link styling --- */
+footer nav a {
+  color: var(--nc-text);
+  text-decoration: none;
+}
+
+footer nav a:hover,
+footer nav a:focus {
+  color: var(--nc-gold);
+  text-decoration: none;
+}
+
+footer nav a.active {
+  font-weight: 600;
+  color: var(--nc-navy);
+  text-decoration: none;
+}
+
 /* Mobile toggler: visible + tidy */
 .navbar-toggler {
   border: 1px solid rgba(16, 60, 85, 0.25);
