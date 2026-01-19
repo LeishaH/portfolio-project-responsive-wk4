@@ -17,8 +17,8 @@
   --nc-shadow: 0 10px 30px rgba(16, 60, 85, 0.12);
 
   --nc-heading-font: "Playfair Display", Georgia, "Times New Roman", serif;
-  --nc-body-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
-    sans-serif;
+  --nc-body-font:
+    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 /* 3) Base */
@@ -79,6 +79,12 @@ header .navbar {
   height: 120px; /* was 140px — still big, but won't wreck navbar layout */
   width: auto;
   display: block;
+}
+
+/* --- Responsive logo swap (large vs small) --- */
+/* Default: show the large logo, hide the small one */
+.logo-img--small {
+  display: none;
 }
 
 /* Header text */
@@ -196,6 +202,15 @@ main {
   header {
     padding-top: 0.75rem !important;
     padding-bottom: 0.75rem !important;
+  }
+
+  /* Swap logos on phones */
+  .logo-img--large {
+    display: none;
+  }
+
+  .logo-img--small {
+    display: block;
   }
 
   /* Smaller logo on phones */
