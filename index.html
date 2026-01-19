@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nota Clara</title>
+
+    <meta
+      name="description"
+      content="Nota Clara is a fictional portfolio project exploring calm UI, responsive layout, and clear structure for a classical music education concept."
+    />
+
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
     <!-- Bootstrap CSS -->
@@ -92,7 +98,7 @@
 
     <!-- =======================
      Hero section
-     ======================= -->
+    ======================= -->
     <section class="hero py-5">
       <div class="container">
         <div class="hero-card text-center mx-auto">
@@ -120,12 +126,15 @@
           </p>
           <a href="about.html" class="btn btn-nc">Explore topics</a>
         </div>
+
         <div class="col-md-6">
-          <img
-            src="images/about.png"
-            class="img-fluid rounded shadow-sm"
-            alt="Piano keys and an open music book"
-          />
+          <a href="about.html" aria-label="Read more about Nota Clara">
+            <img
+              src="images/about.png"
+              class="img-fluid rounded shadow-sm"
+              alt="Piano keys and an open music book"
+            />
+          </a>
         </div>
       </div>
     </main>
@@ -136,11 +145,16 @@
     <section id="topics" class="container py-5">
       <div class="row align-items-center mb-5">
         <div class="col-md-6">
-          <img
-            src="images/notation.png"
-            class="img-fluid rounded"
-            alt="Music notation on a staff"
-          />
+          <a
+            href="work.html"
+            aria-label="View work related to notation visuals"
+          >
+            <img
+              src="images/notation.png"
+              class="img-fluid rounded"
+              alt="Music notation on a staff"
+            />
+          </a>
         </div>
         <div class="col-md-6">
           <h3>Reading Music</h3>
@@ -148,17 +162,19 @@
             Learn how musical notes are written on the staff, how clefs work,
             and how to recognise patterns in notation.
           </p>
-          <a href="#" class="btn btn-nc">Learn more</a>
+          <a href="work.html" class="btn btn-nc">Learn more</a>
         </div>
       </div>
 
       <div class="row align-items-center mb-5">
         <div class="col-md-6 order-md-2">
-          <img
-            src="images/listening.png"
-            class="img-fluid rounded"
-            alt="Classical music listening illustration"
-          />
+          <a href="contact.html" aria-label="Go to contact page">
+            <img
+              src="images/listening.png"
+              class="img-fluid rounded"
+              alt="Classical music listening illustration"
+            />
+          </a>
         </div>
         <div class="col-md-6 order-md-1">
           <h3>Listening Skills</h3>
@@ -166,17 +182,19 @@
             Explore how to listen actively to classical music, recognise form,
             and understand what’s happening beneath the surface.
           </p>
-          <a href="#" class="btn btn-nc">Explore listening</a>
+          <a href="contact.html" class="btn btn-nc">Explore listening</a>
         </div>
       </div>
 
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img
-            src="images/composers.png"
-            class="img-fluid rounded"
-            alt="Classical composers illustration"
-          />
+          <a href="work.html" aria-label="View work and explorations">
+            <img
+              src="images/composers.png"
+              class="img-fluid rounded"
+              alt="Classical composers illustration"
+            />
+          </a>
         </div>
         <div class="col-md-6">
           <h3>Composers & Styles</h3>
@@ -184,7 +202,7 @@
             Discover key composers, musical eras, and stylistic features that
             shape classical music across history.
           </p>
-          <a href="#" class="btn btn-nc">View examples</a>
+          <a href="work.html" class="btn btn-nc">View examples</a>
         </div>
       </div>
     </section>
@@ -213,23 +231,28 @@
 
           <div class="col-md-6 text-md-end">
             <div class="mb-2">
-              <a href="#" class="me-2" aria-label="Instagram">
+              <a href="#" class="me-2" aria-label="Instagram" title="Instagram">
                 <i class="bi bi-instagram"></i>
               </a>
-              <a href="#" class="me-2" aria-label="YouTube">
+              <a href="#" class="me-2" aria-label="YouTube" title="YouTube">
                 <i class="bi bi-youtube"></i>
               </a>
-              <a href="#" class="me-2" aria-label="Twitter / X">
+              <a
+                href="#"
+                class="me-2"
+                aria-label="Twitter / X"
+                title="X (Twitter)"
+              >
                 <i class="bi bi-twitter-x"></i>
               </a>
-              <a href="#" aria-label="Facebook">
+              <a href="#" aria-label="Facebook" title="Facebook">
                 <i class="bi bi-facebook"></i>
               </a>
             </div>
 
-            <small class="text-muted"
-              >© 2026 Nota Clara · Portfolio project</small
-            >
+            <small class="text-muted">
+              © 2026 Nota Clara · Portfolio project
+            </small>
           </div>
         </div>
       </div>
